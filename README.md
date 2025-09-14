@@ -18,5 +18,20 @@ Ideado para iniciarse a aprender a usar Playwright y/o ejecutar un test sencillo
 3️⃣ Usa CodeGen para generar tus primeros comandos
 4️⃣ Modifica y expande los ejemplos según tus necesidades
 
+### Activación de CodeGen
+Para iniciar CodeGen y comenzar a generar código automáticamente:
+```bash
+mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen"
+```
+o para ejecutarlo y abrir el browser en una página específica, por ejemplo Google.
+```bash
+mvn exec:java -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="codegen https://ejemplo.com"
+```
+Este comando abrirá una ventana del navegador con la interfaz de CodeGen donde podrás:
+✨ Seleccionar elementos en la página
+⚡ Generar código automáticamente
+📝 Editar y probar el código generado
+🔄 Refinar los selectores
+
 ## 🎯 Objetivo
 Facilitar el aprendizaje de Playwright mediante ejemplos prácticos y código generado automáticamente. Ideal para desarrolladores que buscan una introducción rápida y práctica a la automatización web.
